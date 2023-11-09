@@ -126,4 +126,4 @@ def update_user(user_id: str = None) -> str:
     if rj.get('last_name') is not None:
         user.last_name = rj.get('last_name')
     user.save()
-    return jsonify(user.to_json()), 200
+    return jsonify(user.to_json()), 200  
